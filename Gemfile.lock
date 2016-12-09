@@ -18,6 +18,17 @@ GIT
       mime-types (>= 1.16)
 
 GIT
+  remote: git://github.com/catarse/catarse_pagarme.git
+  revision: 52113e94c72f6a70a96df0ca250c425ae757cbab
+  branch: simility_af
+  specs:
+    catarse_pagarme (2.9.13)
+      pagarme (= 2.1.4)
+      rails (~> 4.0)
+      sidekiq
+      weekdays (>= 1.0.2)
+
+GIT
   remote: git://github.com/catarse/redactor-rails.git
   revision: 4bd0eadf2f4e451c755ab169fd6210220cda450b
   specs:
@@ -93,11 +104,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    catarse_pagarme (2.9.13)
-      pagarme (= 2.1.4)
-      rails (~> 4.0)
-      sidekiq
-      weekdays (>= 1.0.2)
     catarse_settings_db (0.1.1)
       rails (>= 4.1.1)
     childprocess (0.5.9)
@@ -644,7 +650,7 @@ DEPENDENCIES
   browser (= 1.0.1)
   capybara
   carrierwave!
-  catarse_pagarme (~> 2.9.13)
+  catarse_pagarme!
   catarse_settings_db (>= 0.1.0)
   cocoon
   coffee-rails

@@ -39,8 +39,9 @@ gem 'mixpanel_client'
 
 # Payment engines
 
-gem 'catarse_pagarme', '~> 2.9.13'
+#gem 'catarse_pagarme', '~> 2.9.13'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
+gem 'catarse_pagarme', github: 'catarse/catarse_pagarme', branch: 'simility_af'
 
 # Decorators
 gem 'draper'
