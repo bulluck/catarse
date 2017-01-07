@@ -101,11 +101,10 @@ group :production do
   gem 'fog-aws'
 
   # Workers, forks and all that jazz
-  gem 'unicorn'
 
   # Enabling Gzip on Heroku
   # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
+  #gem 'heroku-deflater', '>= 0.4.1'
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'
@@ -154,6 +153,15 @@ group :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'selenium-webdriver'
+end
+
+group :development, :production do
+  gem 'unicorn'
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano3-unicorn'
 end
 
 gem 'sass-rails'
